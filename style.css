@@ -7,5 +7,138 @@
 }
 
 body {
-    
+    width: 100vw;
+}
+
+#toolbar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    top: 2rem;
+}
+
+#menu-button {
+    display: flex;
+    margin-right: 1.8rem;
+    width: 1.8rem;
+}
+
+#headline {
+    position: relative;
+    margin-top: 6rem;
+    text-align: center;
+    padding: 0 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#primary-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+#support-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+#title-1 {
+    color: #172B4D;
+}
+
+#title-2 {
+    color: #36B37E;
+}
+
+#social-media {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#social-media object {
+    width: 1.5rem;
+}
+
+#header-img {
+    position: absolute;
+    width: 100vw;
+    top: 2rem;
+    left: 0;
+    z-index: -1;
+}
+
+#header-img-desktop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#down-btn-ctn {
+    display: flex;
+    justify-content: center;
+}
+
+#down-btn-ctn button {
+    background: #FFFFFF;
+    border: 0.1rem solid #DFE1E6;
+    padding: 8px;
+    border-radius: 32px;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+#nav-bar-ctn {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #headline {
+        margin-top: 18rem;
+        max-width: 55rem;
+    }
+
+    #header-img-desktop {
+        display: block;
+    }
+
+    #header-img {
+        display: none;
+    }
+
+    #toolbar {
+        display: none;
+    }
+
+    #nav-bar-ctn {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav-bar {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #344563;
+    }
 }
