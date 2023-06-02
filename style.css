@@ -119,6 +119,10 @@ body {
 }
 
 #nav-bar-ctn {
+  background-image: url("icons/header-illustration-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: content-box;
   position: absolute;
   display: none;
   top: 0;
