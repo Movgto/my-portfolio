@@ -61,14 +61,7 @@ body {
 }
 
 #social-media {
-  display: flex;
   margin-top: 1.5rem;
-  justify-content: center;
-  gap: 1rem;
-}
-
-#social-media object {
-  width: 1.5rem;
 }
 
 #header-img {
@@ -115,6 +108,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+#soc-med-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
 }
 
 @media only screen and (min-width: 768px) {
