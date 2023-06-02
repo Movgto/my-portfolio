@@ -4,6 +4,9 @@
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
@@ -13,16 +16,6 @@ body {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-#general-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 3rem;
-}
-
-#general-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
