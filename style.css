@@ -12,6 +12,13 @@ body {
   width: 100vw;
 }
 
+#general-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
 #toolbar {
   display: flex;
   position: absolute;
