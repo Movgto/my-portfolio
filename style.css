@@ -1,18 +1,18 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
 
 body {
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   width: 100vw;
-}
-
-#general-container {
+  overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
