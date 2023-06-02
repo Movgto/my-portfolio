@@ -4,16 +4,16 @@
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   width: 100vw;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#padding-ctn {
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
@@ -112,10 +112,6 @@ body {
 }
 
 #nav-bar-ctn {
-  background-image: url("icons/header-illustration-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-clip: content-box;
   position: absolute;
   display: none;
   top: 0;
@@ -128,6 +124,7 @@ body {
   justify-content: center;
   gap: 1rem;
   list-style: none;
+  align-items: center;
 }
 
 #soc-med-list {
