@@ -26,7 +26,7 @@
 
 **Welcome to my portfolio**
  
-This is an exercise for building a responsive portfolio webpage
+This is an exercise for building a responsive portfolio webpage with a mobile-first design
 
 ## 🛠 Built With <a name="built-with"></a>
 

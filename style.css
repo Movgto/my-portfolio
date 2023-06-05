@@ -6,7 +6,10 @@
   -webkit-box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+html {
   overflow-y: auto;
 }
 
@@ -131,6 +134,14 @@ body {
 }
 
 #works {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  justify-items: center;
+  gap: 3rem;
+}
+
+#works-ctnr {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -258,6 +269,7 @@ body {
 }
 
 #about-me {
+  overflow: visible;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -280,15 +292,15 @@ body {
 
 #ab-me-img {
   background-image: url("icons/about-me-mobile.svg");
-  background-size: contain;
-  background-clip: content-box;
+  background-size: auto;
+  background-clip: border-box;
   width: 300%;
   height: 150%;
   background-repeat: no-repeat;
   position: absolute;
   left: -3rem;
   z-index: -1;
-  top: -45%;
+  bottom: -5rem;
 }
 
 #ab-me-1-img {
@@ -316,7 +328,7 @@ body {
   display: none;
   z-index: -1;
   position: absolute;
-  top: 0;
+  top¿: 0;
   right: -3rem;
 }
 
@@ -424,7 +436,7 @@ body {
     color: #344563;
   }
 
-  #works {
+  #works-ctnr {
     grid-template-columns: repeat(3, 1fr);
   }
 
