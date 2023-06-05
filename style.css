@@ -354,20 +354,20 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  padding: 0 2rem;
 }
 
 .skill-card {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  height: 50vh;
+  height: minmax(50vh, 80vh);
   background-color: #ebf0ee;
   border: 0.1rem solid #c1c7d0;
   border-radius: 0.3rem;
   justify-content: center;
   align-content: center;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .skill-list {
