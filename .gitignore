@@ -3,3 +3,6 @@ node_modules/
 
 # Ignore .vs folder
 .vs/
+
+# Ignore backup html file
+backup.html

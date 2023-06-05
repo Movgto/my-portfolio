@@ -9,11 +9,6 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -91,13 +86,13 @@ Feel free to check the [issues page](https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project just smile :)
+If you like this project you can follow me, that helps a lot.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank you.
+I would like to thank you for taking your time to pass by.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
