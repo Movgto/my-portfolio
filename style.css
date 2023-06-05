@@ -149,6 +149,7 @@ body {
 }
 
 .work-card {
+  position: relative;
   display: flex;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
@@ -157,19 +158,18 @@ body {
   flex-direction: column;
 }
 
-.work-card .top-area {
-  height: 55%;
-  width: 100%;
-}
-
 .work-card .bottom-area {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   height: 45%;
   border-radius: 8px;
   background-color: #fff;
   width: 100%;
-  margin-top: 60%;
+  padding: 1rem 0;
 }
 
 .work-card .bottom-area .top {
@@ -178,13 +178,12 @@ body {
   align-items: center;
   width: 100%;
   height: 40%;
-}
-
-.work-card .bottom-area .bottom {
-  display: flex;
-  place-content: center;
-  align-items: center;
-  height: 40%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #3a4a42;
 }
 
 .work-card .bottom-area .tech {
@@ -192,7 +191,7 @@ body {
   flex-direction: row;
   list-style: none;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 20%;
@@ -200,29 +199,11 @@ body {
 
 .tech-card {
   background-color: #ebf0ee;
-  border-radius: 4px;
-  padding: 0.35rem;
-  color: #3a4a42;
+  border-radius: 25%;
   font-weight: 600;
-  font-size: 0.75rem;
-}
-
-.see-btn .text {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 2rem;
-  padding: 1.5rem 0;
-  color: #42526e;
-  text-align: center;
-}
-
-.work-card .bottom-area .text {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  vertical-align: middle;
-  color: #3a4a42;
+  font-size: 1rem;
+  padding: 1.5rem;
+  color: #172b4d;
 }
 
 #recent-works .text {
@@ -241,7 +222,7 @@ body {
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.06rem;
   color: #fff;
   padding: 0.7rem;
@@ -389,6 +370,7 @@ body {
 
 .skill-list li {
   font-weight: 600;
+  font-size: 1rem;
   padding: 0.8rem;
   background-color: #fff;
   border-radius: 0.3rem;
@@ -396,7 +378,7 @@ body {
   user-select: none;
 }
 
-.skill-icon-ctn {
+.skill-icon {
   display: flex;
   place-content: center;
   padding: 1rem;
