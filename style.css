@@ -64,6 +64,7 @@ body {
   font-size: 1.3rem;
   line-height: 1.8rem;
   margin-top: 2rem;
+  color: #172B4D;
 }
 
 #title-1 {
@@ -126,7 +127,7 @@ body {
   width: 100%;
 }
 
-#soc-med-list {
+.soc-med-list {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -156,14 +157,14 @@ body {
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
-  height: max(min(60vh, 30rem), 20rem);
-  width: 60vw;
+  width: 100%;
+  max-width: 25rem;
   margin: 0 auto;
   flex-direction: column;
 }
 
 .work-card .bottom-area {
-  position: absolute;
+  margin-top: 15rem;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -182,7 +183,7 @@ body {
   width: 100%;
   height: auto;
   font-weight: 600;
-  font-size: max(min(2vw, 1.5rem), 1rem);
+  font-size: max(min(4vw, 2rem), 1rem);
   line-height: 2rem;
   text-align: center;
   vertical-align: middle;
@@ -203,10 +204,10 @@ body {
 
 .tech-card {
   background-color: #ebf0ee;
-  border-radius: 0.6rem;
+  border-radius: 0.3rem;
   font-weight: 600;
-  font-size: max(min(2vw, 1rem), 0.5rem);
-  padding: 0.5rem;
+  font-size: max(min(4vw, 0.8rem), 0.5rem);
+  padding: 0.8rem 0.5rem;
   color: #172b4d;
 }
 
@@ -223,7 +224,7 @@ body {
   place-content: center;
   align-items: center;
   background-color: #36b37f;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -391,9 +392,94 @@ body {
   box-shadow: 0 0.8rem 1rem rgba(37, 47, 137, 0.08);
 }
 
+/* Contact */
+
+#contact {
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact-text {
+  font-size: 2.5rem;
+  color: #172B4D;
+  text-align: center;
+}
+
+form {
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #6B778C;
+}
+
+form input, form textarea {
+  padding: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  border: solid 0.1rem #D0D9D4;
+  font-style: italic;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+form textarea {
+  border-color: #60C095;
+}
+
+form .see-btn {
+  align-self: center;
+}
+
+hr {
+  display: none;
+  background-color: #DFE1E6;
+  height: 0.1rem;
+  border: none;
+}
+
+#email-contact {
+  font-size: 1rem;
+  text-align: center;
+  color: #42526E;
+}
+
+/* Footer */
+
+ul[class='soc-med-list bottom'] {
+  padding-bottom: 2rem;
+}
+
+#contact-img {
+  background: url('./icons/contact.svg') no-repeat;
+  background-size: 5rem;
+  background-position: 100% 100%;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  right: -3rem;
+  z-index: -1;
+}
+
 /* Responsiveness */
 
 @media only screen and (min-width: 768px) {
+
+  #ab-me-desktop-img {
+    right: -5rem;
+  }
+
+  #ab-me-desktop-1-img {
+    left: -5rem;
+  }
+
+  #padding-ctn {
+    padding: 0 5rem;
+  }
+
   #headline {
     margin-top: 18rem;
     max-width: 55rem;
@@ -423,15 +509,19 @@ body {
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
+  }
+
+  #nav-bar a {
+    text-decoration: none;
     color: #344563;
+  }
+
+  #nav-bar a:hover {
+    color: #6e7f9e;
   }
 
   #works-ctnr {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .work-card {
-    width: max(min(20vw, 25rem), 10rem);
   }
 
   #skills {
@@ -458,5 +548,55 @@ body {
 
   #about-me {
     padding: 6rem 10rem;
+  }
+
+  hr {
+    display: block;
+  }
+
+  #contact {
+    overflow: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+  }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1;
+  }
+
+  #contact-text {
+    flex: 1 1;
+    text-align: justify;
+  }
+
+  form input {
+    flex: 1 1;
+  }
+
+  form textarea {
+    width: 100%;
+  }
+
+  #email-contact {
+    width: 100%;
+  }
+
+  form .see-btn {
+    flex: none;
+  }
+
+  #contact-img {
+    position: absolute;
+    bottom: -10rem;
+    left: -5rem;
+    background: url('./icons/contact-desk-1.svg') no-repeat, url('./icons/contact-desk-2.svg') no-repeat, url('./icons/contact-desk-3.svg') no-repeat;
+    background-size: 7rem, 10rem, 10rem;
+    background-position: 30% 50%, 0rem 75%, 100%;
+    height: 30rem;
+    width: 100vw;
+    z-index: -1;
   }
 }
