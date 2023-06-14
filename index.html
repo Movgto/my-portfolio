@@ -15,14 +15,14 @@
     <div id="padding-ctn">
         <header id="nav-bar-ctn">
             <div id="nav-bar">
-                <a>
-                    <p>Portfolio</p>
+                <a href="#works">
+                    Portfolio
                 </a>
-                <a>
-                    <p>About</p>
+                <a href="#about-me">
+                    About
                 </a>
-                <a>
-                    <p>Contact</p>
+                <a href="#contact">
+                    Contact
                 </a>
             </div>
         </header>
@@ -45,7 +45,7 @@
                 </p>
             </div>
             <div id="social-media">
-                <ul id="soc-med-list">
+                <ul class="soc-med-list">
                     <li><a href="TBD"><img src="icons/twitter.svg" /></a></li>
                     <li><a href="TBD"><img src="icons/linkedin.svg" /></a></li>
                     <li><a href="TBD"><img src="icons/medium.svg" /></a></li>
@@ -63,7 +63,7 @@
 
         <section id="works">
             <div id="recent-works">
-                <h1 class="text">My Recent Works</h1>
+                <h2 class="text">My Recent Works</h2>
 
                 <div id="arrow-ctn">
                     <img src="icons/indicator.svg" />
@@ -72,10 +72,10 @@
             <div id="works-ctnr">
                 <div class="work-card">
                     <div class="bottom-area">
-                        <h1 class="top">
+                        <h2 class="top">
                             Multi-post stories<br>
                             Gain+Glory
-                        </h1>
+                        </h2>
                         <ul class="tech">
                             <li class="tech-card">
                                 <p>Ruby on Rails</p>
@@ -96,10 +96,10 @@
                 </div>
                 <div class="work-card">
                     <div class="bottom-area">
-                        <h1 class="top">
+                        <h2 class="top">
                             Multi-post stories<br>
                             Gain+Glory
-                        </h1>
+                        </h2>
 
                         <ul class="tech">
                             <li class="tech-card">
@@ -122,10 +122,10 @@
                 </div>
                 <div class="work-card">
                     <div class="bottom-area">
-                        <h1 class="top">
+                        <h2 class="top">
                             Multi-post stories<br>
                             Gain+Glory
-                        </h1>
+                        </h2>
                         <ul class="tech">
                             <li class="tech-card">
                                 <p>Ruby on Rails</p>
@@ -155,7 +155,7 @@
             <div id="ab-me-desktop-img"></div>
             <div id="ab-me-desktop-1-img"></div>
 
-            <h1 class="title">About me</h1>
+            <h2 class="title">About me</h2>
             <p class="text">
                 I can help you build a product , feature or website Look through some of my work and experience! If you
                 like
@@ -200,7 +200,33 @@
                 </ul>
             </div>
         </section>
+        <section id="contact">
+            <h2 id="contact-text">
+                I'm always interested in hearing about
+                new projects, so if you'd like to chat please
+                get in touch.
+            </h2>
+
+            <form action="https://formspree.io/f/mjvdnklq" method="post">
+                <input maxlength="30" type="text" placeholder="Full name" name="name" required/>
+                <input type="email" placeholder="Email address" name="email" required/>
+                <textarea rows="5" maxlength="500" type="text" name="description" placeholder="Hey I'd like to connect to..."></textarea>
+                <input class="see-btn" type="submit" value="Get in touch"/>
+            </form>
+            <p id="email-contact">maromvz@gmail.com</p>
+            <div id="contact-img"></div>
+        </section>
     </div>
+    <hr />
+    <footer>
+        <ul class="soc-med-list bottom">
+            <li><a href="TBD"><img src="icons/twitter.svg" alt="twitter icon"/></a></li>
+            <li><a href="TBD"><img src="icons/linkedin.svg" alt="linkedin icon" /></a></li>
+            <li><a href="TBD"><img src="icons/medium.svg" alt="medium icon" /></a></li>
+            <li><a href="TBD"><img src="icons/github.svg"  alt="github icon"/></a></li>
+            <li><a href="TBD"><img src="icons/angellist.svg" alt="agellist icon" /></a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
