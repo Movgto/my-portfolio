@@ -10,7 +10,7 @@
 }
 
 html {
-  overflow-x:  hidden;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -89,7 +89,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 0rem;
+  top: 0;
   left: 0;
   z-index: -1;
 }
@@ -99,7 +99,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: content-box;
-  height: auto;
   display: none;
   position: absolute;
   top: 0;
@@ -474,7 +473,6 @@ footer {
 /* Responsiveness */
 
 @media only screen and (min-width: 768px) {
-
   #headline {
     margin-top: 18rem;
     max-width: 55rem;
