@@ -148,7 +148,6 @@ body {
   justify-items: center;
   align-items: center;
   gap: 3rem;
-  border: solid cyan;
 }
 
 #works-ctnr {
@@ -483,8 +482,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   #padding-ctn {
-    padding: 0 14rem;
-    border: solid dimgray;
+    padding: 0 18rem;
   }
 
   #headline {
@@ -534,16 +532,17 @@ footer {
 
   #skills {
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
   }
 
   #ab-me-desktop-img {
-    right: -14rem;
+    right: -18rem;
     display: block;
     position: absolute;
   }
 
   #ab-me-desktop-1-img {
-    left: -14rem;
+    left: -18rem;
     display: block;
     position: absolute;
   }
@@ -576,12 +575,17 @@ footer {
   form {
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 1 1;
+    flex: 3 3;
   }
 
   #contact-text {
-    flex: 1 1;
-    text-align: justify;
+    flex: 2 2;
+    text-align: left;
+    letter-spacing: normal;
+    vertical-align: middle;
+    line-height: 3rem;
+    padding: 2rem 0;
+    font-size: 1.5rem;
   }
 
   form input {
@@ -605,7 +609,7 @@ footer {
   #contact-img {
     position: absolute;
     bottom: -20rem;
-    left: -14rem;
+    left: -18rem;
     background: url('./icons/contact-desk-1.svg') no-repeat, url('./icons/contact-desk-2.svg') no-repeat, url('./icons/contact-desk-3.svg') no-repeat;
     background-size: 10rem, 14rem, 15rem;
     background-position: 25% 60%, 0 150%, 100% 100%;
