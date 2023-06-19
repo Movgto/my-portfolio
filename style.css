@@ -7,6 +7,8 @@
   padding: 0;
   margin: 0;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -49,6 +51,7 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  animation: rotation 4s ease 1;
 }
 
 #primary-text {
@@ -133,6 +136,10 @@ body {
   width: 100%;
 }
 
+#nav-bar a {
+  transition: 0.5s ease-in-out;
+}
+
 .soc-med-list {
   display: flex;
   justify-content: center;
@@ -150,95 +157,16 @@ body {
   gap: 3rem;
 }
 
-#works-ctnr {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  width: 100%;
+#nav-bar a:hover {
+  scale: 1.2;
 }
 
-.work-card {
-  position: relative;
+.soc-med-list {
   display: flex;
-  background-color: #ebf0ee;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 25rem;
-  margin: 0 auto;
-  flex-direction: column;
-}
-
-.work-card .bottom-area {
-  margin-top: 15rem;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 1rem;
-  border-radius: 8px;
-  background-color: #fff;
-  width: 100%;
-  padding: 1rem 0;
-}
-
-.work-card .bottom-area .top {
-  display: flex;
-  place-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  font-weight: 600;
-  font-size: max(min(4vw, 2rem), 1rem);
-  line-height: 2rem;
-  text-align: center;
-  vertical-align: middle;
-  color: #3a4a42;
-}
-
-.work-card .bottom-area .tech {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
-  align-content: center;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-.tech-card {
-  background-color: #ebf0ee;
-  border-radius: 0.3rem;
-  font-weight: 600;
-  font-size: max(min(4vw, 0.8rem), 0.5rem);
-  padding: 0.8rem 0.5rem;
-  color: #172b4d;
-}
-
-#recent-works .text {
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.5rem;
-  padding: 1rem 0;
-}
-
-.see-btn {
-  display: flex;
-  place-content: center;
-  align-items: center;
-  background-color: #36b37f;
-  border-radius: 0.3rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  letter-spacing: 0.06rem;
-  color: #fff;
-  padding: 0.7rem;
-  user-select: none;
-  border: none;
 }
 
 form .see-btn {
@@ -268,195 +196,6 @@ form .see-btn {
   height: 2rem;
 }
 
-#about-me {
-  overflow: visible;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-#about-me .title {
-  color: #172b4d;
-  font-weight: 700;
-  font-size: 2.5rem;
-}
-
-#about-me .text {
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-  color: #42526e;
-  text-align: center;
-}
-
-#ab-me-img {
-  background-image: url("icons/about-me-mobile.svg");
-  background-size: auto;
-  background-clip: border-box;
-  width: 300%;
-  height: 150%;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: -3rem;
-  z-index: -1;
-  bottom: -5rem;
-}
-
-#ab-me-1-img {
-  background-image: url("icons/about-me-mobile-1.svg");
-  background-size: contain;
-  background-clip: content-box;
-  background-position: right;
-  width: 50%;
-  height: 40%;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: -1;
-  top: -15%;
-  right: -3rem;
-}
-
-#ab-me-desktop-img {
-  background-image: url("icons/about-me-desktop.svg");
-  background-size: contain;
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 40%;
-  height: 50%;
-  display: none;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: -3rem;
-}
-
-#ab-me-desktop-1-img {
-  background-image: url("icons/about-me-desktop-1.svg");
-  background-size: contain;
-  background-clip: content-box;
-  background-repeat: no-repeat;
-  width: 40%;
-  height: 35%;
-  display: none;
-  z-index: -1;
-  position: absolute;
-  bottom: -2rem;
-  left: -3rem;
-}
-
-#skills {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.skill-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  height: minmax(50vh, 80vh);
-  background-color: #ebf0ee;
-  border: 0.1rem solid #c1c7d0;
-  border-radius: 0.3rem;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.skill-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.skill-text {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
-  vertical-align: middle;
-  color: #344563;
-}
-
-.skill-list li {
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.8rem;
-  background-color: #fff;
-  border-radius: 0.3rem;
-  color: #36b37e;
-  user-select: none;
-}
-
-.skill-icon {
-  display: flex;
-  place-content: center;
-  padding: 1rem;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 0.8rem 1rem rgba(37, 47, 137, 0.08);
-}
-
-/* Contact */
-
-#contact {
-  overflow: visible;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-#contact-text {
-  font-size: 2rem;
-  color: #172b4d;
-  text-align: center;
-  line-height: 4rem;
-}
-
-form {
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  color: #6b778c;
-}
-
-form input,
-form textarea {
-  padding: 1rem 0.5rem;
-  border-radius: 0.3rem;
-  border: solid 0.1rem #d0d9d4;
-  font-style: italic;
-  font-weight: 400;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
-}
-
-form textarea {
-  border-color: #60c095;
-}
-
-hr {
-  display: none;
-  position: absolute;
-  background-color: #dfe1e6;
-  height: 0.1rem;
-  border: none;
-}
-
-#email-contact {
-  font-size: 1rem;
-  text-align: center;
-  color: #42526e;
-}
-
 /* Footer */
 
 #contact-img {
@@ -478,143 +217,17 @@ footer {
   gap: 1.5rem;
 }
 
-/* Responsiveness */
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+    scale: 1;
 
-@media only screen and (min-width: 768px) {
-  #padding-ctn {
-    padding: 0 18rem;
+  50% {
+    scale: 1.5;
   }
-
-  #headline {
-    margin-top: 18rem;
-    max-width: 55rem;
-  }
-
-  #header-img-desktop {
-    display: block;
-  }
-
-  #header-img {
-    display: none;
-  }
-
-  #toolbar {
-    display: none;
-  }
-
-  #nav-bar-ctn {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-
-  #nav-bar {
-    display: flex;
-    gap: 2rem;
-    padding: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-  }
-
-  #nav-bar a {
-    text-decoration: none;
-    color: #344563;
-  }
-
-  #nav-bar a:hover {
-    color: #6e7f9e;
-  }
-
-  #works-ctnr {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  #skills {
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-  }
-
-  #ab-me-desktop-img {
-    right: -18rem;
-    display: block;
-    position: absolute;
-  }
-
-  #ab-me-desktop-1-img {
-    left: -18rem;
-    display: block;
-    position: absolute;
-  }
-
-  #ab-me-img {
-    display: none;
-  }
-
-  #ab-me-1-img {
-    display: none;
-  }
-
-  #about-me {
-    padding: 6rem 10rem;
-  }
-
-  hr {
-    display: block;
-    position: relative;
-    margin-top: 2rem;
-  }
-
-  #contact {
-    overflow: visible;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 20rem;
-  }
-
-  form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 3 3;
-  }
-
-  #contact-text {
-    flex: 2 2;
-    text-align: left;
-    letter-spacing: normal;
-    vertical-align: middle;
-    line-height: 3rem;
-    padding: 2rem 0;
-    font-size: 1.5rem;
-  }
-
-  form input {
-    flex: 1 1;
-  }
-
-  form textarea {
-    width: 100%;
-  }
-
-  #email-contact {
-    display: none;
-    position: absolute;
-    width: 100%;
-  }
-
-  form .see-btn {
-    flex: none;
-  }
-
-  #contact-img {
-    position: absolute;
-    bottom: -20rem;
-    left: -18rem;
-    background: url('./icons/contact-desk-1.svg') no-repeat, url('./icons/contact-desk-2.svg') no-repeat, url('./icons/contact-desk-3.svg') no-repeat;
-    background-size: 10rem, 14rem, 15rem;
-    background-position: 25% 60%, 0 150%, 100% 100%;
-    height: 30rem;
-    width: 100vw;
-    z-index: -1;
+    
+  100% {
+    transform: rotate(360deg);
+    scale: 1;
   }
 }
