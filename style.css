@@ -51,7 +51,7 @@ body {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  animation: rotation 4s ease 1;
+  animation: rotation 2s ease 1;
 }
 
 #primary-text {
@@ -221,6 +221,7 @@ footer {
   0% {
     transform: rotate(0);
     scale: 1;
+  }
 
   50% {
     scale: 1.5;
