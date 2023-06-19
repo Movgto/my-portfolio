@@ -140,6 +140,23 @@ body {
   transition: 0.5s ease-in-out;
 }
 
+.soc-med-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+#works {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 3rem;
+}
+
 #nav-bar a:hover {
   scale: 1.2;
 }
@@ -204,12 +221,11 @@ footer {
   0% {
     transform: rotate(0);
     scale: 1;
-  }
 
   50% {
     scale: 1.5;
   }
-
+    
   100% {
     transform: rotate(360deg);
     scale: 1;
