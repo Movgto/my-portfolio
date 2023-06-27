@@ -26,17 +26,6 @@ menuButton.addEventListener('click', ()=>{
             menuButton.children[0].setAttribute('src', './icons/icon-menu.svg');
             menuButtonVisible = !menuButtonVisible;
         }
-
-        mobileMenu.innerHTML = `<ul id='mm-list'>
-                                    <li class='mm-op'><a href='#works'>Portfolio</a></li>
-                                    <li class='mm-op'><a href='#about-me'>About</a></li>
-                                    <li class='mm-op'><a href='#contact'>Contact</a></li>
-                                </ul>`;
-        document.body.appendChild(mobileMenu);
-
-        document.querySelectorAll('#mm-list a').forEach((item, i)=>{
-            item.addEventListener('click', removeMenu);
-        });
     }
     else if (!collapsing) {
         const menuCtr = document.getElementById('mobile-menu-ctr');
