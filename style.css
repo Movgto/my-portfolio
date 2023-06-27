@@ -46,6 +46,10 @@ body {
   width: 1.8rem;
 }
 
+#social-media img {
+  width: 1.5rem;
+}
+
 #menu-button img:hover {
   cursor: pointer;
 }
@@ -86,10 +90,6 @@ body {
 
 #social-media {
   margin-top: 1.5rem;
-}
-
-#social-media img {
-  width: 1.5rem;
 }
 
 #header-img {
